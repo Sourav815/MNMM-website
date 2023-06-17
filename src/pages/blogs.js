@@ -4,7 +4,9 @@ import Layout from "../components/Layout";
 function blogs() {
   return (
     <Layout>
-      <div>blogs</div>
+      <main className="bg-gray-800 text-white flex flex-col items-center h-screen justify-center">
+        BLOGS PAGE
+      </main>
     </Layout>
   );
 }

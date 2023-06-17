@@ -4,7 +4,9 @@ import Layout from "../components/Layout";
 function community() {
   return (
     <Layout>
-      <div>community</div>;
+      <main className="bg-gray-800 text-white flex flex-col items-center h-screen justify-center">
+        COMMUNITY PAGE
+      </main>
     </Layout>
   );
 }

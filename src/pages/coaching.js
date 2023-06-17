@@ -4,7 +4,9 @@ import Layout from "../components/Layout";
 function coaching() {
   return (
     <Layout>
-      <div>coaching</div>;
+      <main className="bg-gray-800 text-white flex flex-col items-center h-screen justify-center">
+        COACHING PAGE
+      </main>
     </Layout>
   );
 }
