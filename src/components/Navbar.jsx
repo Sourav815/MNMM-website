@@ -48,12 +48,12 @@ function Navbar() {
       </div>
       {/* linke items */}
       <ul
-        className={`md:flex md:items-center md:pb-0 py-20 absolute md:static bg-gray-900 z-50 left-0 w-full md:w-auto md:pl-0  transition-all duration-300 ease-in ${
+        className={`flex flex-col md:flex-row md:items-center gap-y-10 py-20 md:py-0  absolute md:static bg-gray-900 z-50 left-0 w-full md:w-auto   transition-all duration-300 ease-in ${
           open ? "top-14" : "top-[-490px]"
         }`}
       >
         {Links.map((link) => (
-          <li className="md:ml-14 md:my-0 my-10 flex justify-center text-xl font-semibold">
+          <li className="md:ml-14 md:my-0 flex justify-center text-xl font-semibold">
             <a
               href={link.link}
               className="text-gray-300 hover:text-orange-200 duration-200"
