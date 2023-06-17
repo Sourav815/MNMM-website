@@ -1,23 +1,21 @@
 import React, { useState } from "react";
 
 function Navbar() {
-  const [checked, setChecked] = useState(false);
-  const handleClick = () => setChecked(!checked);
+  let Links = [
+    { name: "HOME", link: "/" },
+    { name: "COACHING", link: "/coaching" },
+    { name: "BLOGS", link: "/blogs" },
+    { name: "COMMUNITY", link: "/community" },
+  ];
+  let [open, setOpen] = useState(false);
   return (
-    <div className="flex items-center h-16 p-3 px-4 bg-gray-900">
+    <div className="flex  items-center h-16 p-3 px-4 bg-gray-900 md:px-20 xl:px-32">
       <div className="flex-1 text-white font-bold text-2xl ">MNMM</div>
-      <input
-        onClick={handleClick}
-        checked={checked}
-        type="checkbox"
-        id="menu-toggle"
-        style={{ display: "none" }}
-      />
-      <label
-        for="menu-toggle"
-        className="inline-flex items-center p-2 ml-3 text-lg text-gray-500 rounded-lg lg:hidden  focus:outline-none focus:ring-2  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+      <div
+        onClick={() => setOpen(!open)}
+        className="mr-1 cursor-pointer md:hidden w-7 h-7 text-white"
       >
-        {!checked ? (
+        {!open ? (
           <svg
             className="w-8 h-8"
             aria-hidden="true"
@@ -47,7 +45,24 @@ function Navbar() {
             />
           </svg>
         )}
-      </label>
+      </div>
+      {/* linke items */}
+      <ul
+        className={`md:flex md:items-center md:pb-0 py-20 absolute md:static bg-gray-900 z-50 left-0 w-full md:w-auto md:pl-0  transition-all duration-300 ease-in ${
+          open ? "top-14" : "top-[-490px]"
+        }`}
+      >
+        {Links.map((link) => (
+          <li className="md:ml-14 md:my-0 my-10 flex justify-center text-xl font-semibold">
+            <a
+              href={link.link}
+              className="text-gray-300 hover:text-orange-200 duration-200"
+            >
+              {link.name}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

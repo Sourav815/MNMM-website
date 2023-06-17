@@ -2,7 +2,7 @@ import React from "react";
 
 function TestimonialCard({ name, sport, description, imageUrl }) {
   return (
-    <div className="px-5 py-5 max-w-lg">
+    <div className="px-5 py-5 max-w-md">
       <div className="flex items-center gap-4 p-5">
         <img
           alt="profile picture"
@@ -10,12 +10,14 @@ function TestimonialCard({ name, sport, description, imageUrl }) {
           className="h-20 w-20 rounded-full bg-slate-500"
         />
         <div>
-          <h3 className=" font-bold text-2xl">{name}</h3>
-          <h4 className="font-bold text-lg text-gray-400">{sport}</h4>
+          <h3 className=" font-bold text-2xl lg:text-3xl">{name}</h3>
+          <h4 className="font-bold text-lg lg:text-xl text-gray-400">
+            {sport}
+          </h4>
         </div>
       </div>
       <div className="flex-col flex items-center">
-        <p className="text-justify px-3 py-2">{description}</p>
+        <p className="text-justify px-3 py-2 lg:text-lg">{description}</p>
 
         {/* Stars */}
         <div className="flex gap-2 py-5">

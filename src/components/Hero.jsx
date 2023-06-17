@@ -3,7 +3,7 @@ import React from "react";
 function Hero() {
   return (
     <>
-      <section className="flex flex-col items-center gap-10 px-3 py-20 ">
+      <section className="flex flex-col items-center gap-10 px-3 py-20 lg:h-screen">
         <h1 className="text-center font-bold text-3xl z-10">
           Creating a supportive community of athletes who share your{" "}
           <span className="text-[#FFD362]">PASSION</span> and{" "}

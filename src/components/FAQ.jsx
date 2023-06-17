@@ -63,8 +63,8 @@ function FAQ() {
   };
 
   return (
-    <section className="">
-      <h2 className="text-2xl font-bold text-center pt-10">
+    <section className="max-w-4xl">
+      <h2 className="text-2xl md:text-4xl font-bold text-center pt-10">
         Frequently Asked Questions
       </h2>
       <div className="py-10">
@@ -72,11 +72,13 @@ function FAQ() {
           return (
             <>
               <div
-                className="flex justify-between items-center w-full text-left cursor-pointer py-2"
+                className="flex justify-between items-center w-full text-left cursor-pointer py-2 "
                 onClick={() => toggle(index)}
                 key={index}
               >
-                <h3 className="pl-5 text-md">{item.question}</h3>
+                <h3 className="pl-5 text-md md:text-xl lg:text-2xl">
+                  {item.question}
+                </h3>
                 <span className="m-4">
                   {clicked === index ? (
                     <svg
@@ -112,7 +114,7 @@ function FAQ() {
                 </span>
               </div>
               {clicked === index ? (
-                <div className="p-5 pt-4 text-sm text-gray-300">
+                <div className="p-5 pt-4 text-sm md:text-lg lg:text-xl md:pb-10 text-gray-300 max-w-4xl">
                   <p className="leading-6">{item.answer}</p>
                 </div>
               ) : null}
