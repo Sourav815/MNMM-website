@@ -1,10 +1,9 @@
 import * as React from "react";
-import AboutUs from "../components/AboutUs";
-import FAQ from "../components/FAQ";
-import Hero from "../components/Hero";
+import AboutUs from "../components/Home/AboutUs";
+import FAQ from "../components/Home/FAQ";
+import Hero from "../components/Home/Hero";
 import Layout from "../components/Layout";
-import Navbar from "../components/Navbar";
-import Testimonials from "../components/Testimonials";
+import Testimonials from "../components/Home/Testimonials";
 
 const IndexPage = () => {
   return (
