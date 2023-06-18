@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React, { useState } from "react";
 
 function Navbar() {
@@ -54,12 +55,12 @@ function Navbar() {
       >
         {Links.map((link) => (
           <li className="md:ml-14 md:my-0 flex justify-center text-xl font-semibold">
-            <a
-              href={link.link}
+            <Link
+              to={link.link}
               className="text-gray-300 hover:text-orange-200 duration-200"
             >
               {link.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
