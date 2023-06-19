@@ -18,7 +18,7 @@ function Hero() {
           </h2>
           <div className=" flex flex-col lg:flex-row gap-7">
             <Link
-              to="#"
+              to="/coaching"
               className="py-5 px-6 text-xl xl:text-2xl text-black font-bold bg-[#FFD362] rounded-full flex justify-center cursor-pointer z-10 bg-gradient-to-tr from-[#ffd262] to-[#ffb20d] "
             >
               Join the Crew
