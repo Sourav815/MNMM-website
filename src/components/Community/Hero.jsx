@@ -8,7 +8,7 @@ function Hero() {
         OUR COMMUNITY
       </h1>
       <img
-        className="h-96 rounded-lg py-10"
+        className="h-[30rem] rounded-lg py-10"
         src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29ya291dHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
       />
       <Link
