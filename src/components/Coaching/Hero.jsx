@@ -12,7 +12,10 @@ function Hero() {
       />
       <div className="h-[80vh] z-20 gap-y-10 flex flex-col justify-center items-center">
         <h1 className="font-extrabold text-center text-4xl p-5">
-          Unlock Your Fitness Potential with Minumum Strength
+          Unlock Your Fitness Potential with{" "}
+          <span className="text-black bg-white px-2 pb-1">
+            Minimum <span className="underline">Strength</span>
+          </span>
         </h1>
         <p className="text-center font-medium p-5 px-3">
           Our coaching section within the fitness app offers a personalized and
