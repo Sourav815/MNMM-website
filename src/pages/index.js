@@ -4,6 +4,7 @@ import FAQ from "../components/Home/FAQ";
 import Hero from "../components/Home/Hero";
 import Layout from "../components/Layout";
 import Testimonials from "../components/Home/Testimonials";
+import Features from "../components/Home/Features";
 
 const IndexPage = () => {
   return (
@@ -11,6 +12,7 @@ const IndexPage = () => {
       <Layout>
         <main className="bg-gray-800 text-white flex flex-col items-center">
           <Hero />
+          <Features />
           <Testimonials />
           <FAQ />
           <AboutUs />

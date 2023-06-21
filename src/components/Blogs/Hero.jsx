@@ -10,7 +10,7 @@ function Hero() {
         className="absolute h-[80vh] z-0 w-full object-cover"
       />
       <div className="h-[80vh] z-20 gap-y-10 flex flex-col pt-20 items-center">
-        <h1 className="font-extrabold text-center text-4xl p-5">
+        <h1 className="font-extrabold text-center text-5xl p-5">
           Ignite Your Fitness Journey with Minumum Strength
         </h1>
         <p className="text-center  font-medium p-5 px-3">
