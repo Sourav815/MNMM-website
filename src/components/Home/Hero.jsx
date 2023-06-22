@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
+import HeroImg from "../../images/hero.jpg";
 
 function Hero() {
   return (
@@ -33,7 +34,7 @@ function Hero() {
         </div>
         <img
           className="z-10 rounded-lg h-0 w-0 lg:h-[28rem] lg:w-[38rem] xl:h-[33rem] xl:w-[45rem]"
-          src="https://media.istockphoto.com/id/838386570/photo/strong-man-doing-deadlift-training-in-gym.jpg?s=612x612&w=0&k=20&c=ok5sL3Fr8dos-fthuxQkjTZsIRN9mu0bhNE4RODC9CI="
+          src={HeroImg}
         />
         {/* <img src="/hero.jpg" style={{ maxWidth: "100%" }} /> */}
       </section>
