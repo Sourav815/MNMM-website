@@ -14,7 +14,7 @@ function Blogs() {
         <h1 className="text-4xl font-extrabold py-10">Latest Posts </h1>
 
         <div>
-          {posts.allWpPost.edges.reverse().map((post) => (
+          {posts.allWpPost.edges.map((post) => (
             <Blog
               key={post.node.id}
               title={post.node.title}

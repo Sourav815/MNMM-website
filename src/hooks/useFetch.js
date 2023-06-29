@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 export const useFetch = () => {
   const data = useStaticQuery(graphql`
     query Posts {
-      allWpPost {
+      allWpPost(sort: { date: DESC }) {
         edges {
           node {
             id
