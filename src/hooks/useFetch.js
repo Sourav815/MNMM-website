@@ -9,6 +9,7 @@ export const useFetch = () => {
             id
             title
             content
+            slug
           }
         }
       }

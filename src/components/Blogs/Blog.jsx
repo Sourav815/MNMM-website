@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-function Blog({ img, title, description }) {
+function Blog({ img, title, description, url }) {
   return (
     <div className="flex flex-col items-center max-w-xl mb-20">
       <img alt="" src={img} />
@@ -22,7 +22,7 @@ function Blog({ img, title, description }) {
       </div>
       <Link
         className="bg-black p-6 py-7 text-lg rounded-full font-bold inline-flex items-center justify-center  h-10"
-        href="#"
+        href={url}
       >
         Read Now
       </Link>
