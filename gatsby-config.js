@@ -1,6 +1,11 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `website`,
@@ -11,10 +16,10 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url:
-          // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
-          process.env.WPGRAPHQL_URL ||
-          `http://localhost/wordpress/index.php?graphql`,
+        url: "http://35.243.205.170/index.php?graphql",
+        // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
+        // process.env.WPGRAPHQL_URL,
+        // || `http://localhost/wordpress/index.php?graphql`,
         schema: {
           //Prefixes all WP Types with "Wp" so "Post and allPost" become "WpPost and allWpPost".
           typePrefix: `Wp`,
