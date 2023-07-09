@@ -13,6 +13,14 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-postcss",
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: false,
+      },
+    },
     {
       resolve: `gatsby-source-wordpress`,
       options: {

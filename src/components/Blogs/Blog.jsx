@@ -8,7 +8,11 @@ function Blog({ img, title, description, url }) {
       <h2 className="text-2xl font-bold px-3 pb-5 pt-10 text-center">
         {title}
       </h2>
-      <p className="text-center px-3">{description}</p>
+      {/* <p className="text-center px-3">{description}</p> */}
+      <div
+        className="text-center flex flex-col items-center space-y-3 px-3"
+        dangerouslySetInnerHTML={{ __html: description }}
+      />
       <div class="px-6 pt-4 pb-7">
         <span class="inline-block bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold text-gray-200 mr-2 mb-2">
           #gym

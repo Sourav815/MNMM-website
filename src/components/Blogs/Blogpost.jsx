@@ -10,7 +10,10 @@ export default function BlogPost({ data }) {
         {post.edges.map((blog) => (
           <>
             <h1 className="text-3xl font-extrabold p-10">{blog.node.title}</h1>
-            <div>{blog.node.content}</div>
+            <div
+              className="px-5 text-center"
+              dangerouslySetInnerHTML={{ __html: blog.node.content }}
+            />
           </>
         ))}
       </div>
