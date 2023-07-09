@@ -10,6 +10,11 @@ export const useFetch = () => {
             title
             content
             slug
+            tags {
+              nodes {
+                name
+              }
+            }
           }
         }
       }

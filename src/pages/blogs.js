@@ -20,6 +20,7 @@ function Blogs() {
               title={post.node.title}
               description={post.node.content}
               url={post.node.slug}
+              tags={post.node.tags.nodes}
             />
           ))}
         </div>
