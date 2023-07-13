@@ -14,7 +14,7 @@ export default function BlogPost({ data }) {
             </h1>
             {/* <h4 className="text-lg font-light text-gray-400">DD/MM/YYYY</h4> */}
             <div
-              className="text-center lg:text-xl space-y-5 flex flex-col justify-center items-center mt-10 [&_figure_img]:rounded-2xl [&_div_div_img]:rounded-full [&_p]:text-justify [&>div]:flex [&>div]:items-center [&>div]:ml-[-8rem] [&_strong]:text-xs [&_div_div]:ml-1 [&_ul]:flex [&_ul]:w-full [&_ul]:justify-around [&_li]:mb-8" 
+              className="lg:text-xl space-y-5 flex flex-col justify-center items-center mt-10 [&_img]:rounded-2xl [&_p]:text-justify [&>div]:flex [&>div]:ml-[-8rem] [&_strong]:text-xs [&_div_div]:ml-1 [&_ul]:flex [&_ul]:w-full [&_ul]:justify-around [&_li]:mb-8" 
               dangerouslySetInnerHTML={{ __html: blog.node.content }}
             />
           </div>
