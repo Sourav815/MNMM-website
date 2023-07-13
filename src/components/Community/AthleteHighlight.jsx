@@ -6,14 +6,14 @@ function AthleteHighlight() {
     {
       name: "Dave Lee",
       sport: "Powerlifting",
-      link: "#",
+      link: "/athelete",
       imgLink:
         "https://machohairstyles.com/wp-content/uploads/2020/12/top-knot-for-man-with-square-face-shape.jpg",
     },
     {
       name: "Dave Lee",
       sport: "Powerlifting",
-      link: "#",
+      link: "/athelete",
       imgLink:
         "https://machohairstyles.com/wp-content/uploads/2020/12/top-knot-for-man-with-square-face-shape.jpg",
     },
