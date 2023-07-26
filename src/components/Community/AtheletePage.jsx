@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import React from "react";
 
 function AchivementCard() {
@@ -29,7 +29,8 @@ function AchivementCard() {
   );
 }
 
-function AtheletePage() {
+export default function AtheletePage({ althletes }) {
+  console.log(althletes);
   const athelete = {
     imageUrl:
       "https://www.mecgale.com/wp-content/uploads/2017/08/dummy-profile.png",
@@ -121,4 +122,18 @@ function AtheletePage() {
   );
 }
 
-export default AtheletePage;
+export const query = graphql`
+  query Athletes($slug: String!) {
+    allStrapiAthlete(filter: { id: { eq: $slug } }) {
+      nodes {
+        id
+        name
+        sport
+        bio
+        profilePicture {
+          url
+        }
+      }
+    }
+  }
+`;

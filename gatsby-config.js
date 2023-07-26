@@ -17,9 +17,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: "http://127.0.0.1:1337",
+        apiURL: "http://35.243.205.170",
         accessToken:
-          "d4edac00f44de2da92ad3a4e0b4c4469970547d1d8d7d23a8b811bca116ceb93361d99555719054609d2c6dfbfb255588c0c846ffb331e5bc238f07712409bbe8582676b5b0478c0c63eb86da409d04b3b31b3bec7ffb594a414ba4594c66b8322998c3450adf261dbf99bc07b0a7e152fe88521e38eda5294fb1412817dd000",
+          "39dde4ca2295994de639ab123d840e07f3e7eaa431887ca8f2d5e4229b02866d9ceecf23a0e850a6bb5772078d59eaa6231a4437d0a4ed556ff84cad7f6866dd07b9e46843d6988131618db4ceb24f34c3c58ce8a6a0a8c9becda1b4c35c746a5794579ad2a935a97de4e1a48a0b6985315daf0b6f0bb6b31cf31d5d5691d549",
         collectionTypes: ["blog", "athlete"],
         singleTypes: [],
         maxParallelRequests: 5, // (Optional) Default: Number.POSITIVE_INFINITY

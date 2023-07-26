@@ -1,11 +1,12 @@
 import { Link } from "gatsby";
 import React from "react";
+import { ip } from "../../utils/ip";
 
 function AthleteCard({ name, sport, imgLink, link }) {
   return (
     <div className="flex flex-col items-center py-10">
       <img
-        src={imgLink}
+        src={`${ip}${imgLink?.url}`}
         alt=""
         className="h-32 w-32 object-cover rounded-full"
       />
