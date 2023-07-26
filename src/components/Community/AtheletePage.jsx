@@ -131,3 +131,14 @@ export const query = graphql`
     }
   }
 `;
+
+export const Head = () => (
+  <>
+    <title>MNMM</title>
+    <meta name="description" content="MNMM website" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+  </>
+);
