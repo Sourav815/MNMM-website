@@ -14,13 +14,14 @@ function Blogs() {
         <h1 className="text-4xl font-extrabold py-10">Latest Posts </h1>
 
         <div>
-          {posts.allWpPost.edges.map((post) => (
+          {posts.allStrapiBlog.nodes.map((post) => (
             <Blog
-              key={post.node.id}
-              title={post.node.title}
-              description={post.node.content}
-              url={post.node.slug}
-              tags={post.node.tags.nodes}
+              key={post.id}
+              img={post.featuredImage}
+              title={post.title}
+              description={post.metadesc}
+              url={post.id}
+              // tags={post.node.tags.nodes}
             />
           ))}
         </div>

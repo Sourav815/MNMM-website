@@ -2,19 +2,15 @@ import { useStaticQuery, graphql } from "gatsby";
 
 export const useFetch = () => {
   const data = useStaticQuery(graphql`
-    query Posts {
-      allWpPost(sort: { date: DESC }) {
-        edges {
-          node {
+    query Blogs {
+      allStrapiBlog {
+        nodes {
+          id
+          title
+          metadesc
+          featuredImage {
             id
-            title
-            content
-            slug
-            tags {
-              nodes {
-                name
-              }
-            }
+            url
           }
         }
       }
