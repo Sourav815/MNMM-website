@@ -24,4 +24,13 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => (
+  <>
+    <title>MNMM</title>
+    <meta name="description" content="MNMM website" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+  </>
+);
