@@ -15,6 +15,26 @@ module.exports = {
     "gatsby-plugin-postcss",
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: process.env.STRAPI_LOCAL_URL,
+        accessToken:
+          "d4edac00f44de2da92ad3a4e0b4c4469970547d1d8d7d23a8b811bca116ceb93361d99555719054609d2c6dfbfb255588c0c846ffb331e5bc238f07712409bbe8582676b5b0478c0c63eb86da409d04b3b31b3bec7ffb594a414ba4594c66b8322998c3450adf261dbf99bc07b0a7e152fe88521e38eda5294fb1412817dd000",
+        collectionTypes: ["blog", "athlete"],
+        singleTypes: [],
+        maxParallelRequests: 5, // (Optional) Default: Number.POSITIVE_INFINITY
+        remoteFileHeaders: {
+          /**
+           * Customized request headers
+           * For http request with a image or other files need authorization
+           * For expamle: Fetch a CDN file which has a security config when gatsby building needs
+           */
+          Referer: "https://your-site-domain/",
+          // Authorization: "Bearer eyJhabcdefg_replace_it_with_your_own_token",
+        },
+      },
+    },
+    {
       resolve: `gatsby-transformer-sharp`,
       options: {
         // The option defaults to true
