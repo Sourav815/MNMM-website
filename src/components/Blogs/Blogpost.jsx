@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../Layout'
 import ReactMarkdown from 'react-markdown'
+import moment from 'moment'
 
 export default function BlogPost ({ data }) {
   const post = data.allStrapiBlog
@@ -13,8 +14,9 @@ export default function BlogPost ({ data }) {
           <div
             className='px-5 py-10 max-w-4xl mx-auto prose dark:prose-invert sm:prose-sm lg:prose-lg xl:prose-xl prose-img:rounded-2xl'>
             <img src={apiURL + blog.featuredImage.url} alt='blog_image' />
-            <div >
-              <p className="py-0"><strong>Posted By: </strong>{blog.yourName}<br/><strong> Posted On: </strong>{blog.publishedAt.toLocaleString()}</p>
+            <div className="text-xs">
+              <p className="py-0"><strong>Posted By: </strong>{blog.yourName}<br/><strong> Posted On: </strong>{blog.publishedAt}</p>
+              
             </div>
             <ReactMarkdown>{blog.content.data.content}</ReactMarkdown>
             <hr className="border-solid border-amber-200"/>
