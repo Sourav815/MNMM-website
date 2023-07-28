@@ -64,7 +64,7 @@ function FAQ() {
 
   return (
     <section className="max-w-4xl">
-      <h2 className="text-2xl md:text-4xl font-bold text-center pt-10">
+      <h2 className="text-2xl md:text-4xl font-bold text-center">
         Frequently Asked Questions
       </h2>
       <div className="py-10">

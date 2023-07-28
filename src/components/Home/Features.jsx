@@ -25,12 +25,12 @@ function Features() {
     },
   ];
   return (
-    <div className="pb-20">
+    <div className="">
       <h2 className="text-3xl md:text-4xl font-bold text-center pb-5">
         Can’t wait to know more ?
       </h2>
 
-      <div className="flex flex-col lg:flex-row gap-x-10">
+      <div className="flex flex-col lg:flex-row gap-x-10 gap-y-10 py-10">
         {data.map((feature, index) => (
           <Feature
             title={feature.title}
