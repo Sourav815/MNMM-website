@@ -15,7 +15,7 @@ export default function BlogPost ({ data }) {
             className='px-5 py-10 max-w-4xl mx-auto prose dark:prose-invert sm:prose-sm lg:prose-lg xl:prose-xl prose-img:rounded-2xl'>
             <img src={ip + blog.featuredImage.url} alt='blog_image' />
             <div className="text-xs">
-              <p className="py-0"><strong>Posted By: </strong>{blog.yourName}<br/><strong> Posted On: </strong>{blog.publishedAt}.</p>
+              <p className="py-0"><strong>Posted By: </strong>{blog.yourName}<br/><strong> Posted On: </strong>{moment(blog.publishedAt).format("MMMM Do YYYY, hh:mm a")}.</p>
               
             </div>
             <ReactMarkdown>{blog.content.data.content}</ReactMarkdown>
