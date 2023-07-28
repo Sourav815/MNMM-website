@@ -10,7 +10,7 @@ const IndexPage = () => {
   return (
     <>
       <Layout>
-        <main className="bg-gray-800 text-white flex flex-col items-center">
+        <main className="bg-zinc-800 text-white flex flex-col items-center">
           <Hero />
           <Features />
           <Testimonials />

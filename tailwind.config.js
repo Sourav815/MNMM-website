@@ -4,7 +4,6 @@ module.exports = {
     `./src/pages/**/*.{js,jsx,ts,tsx}`,
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
-  theme: {
-  },
+  theme: {},
   plugins: [require("@tailwindcss/typography")],
 };

@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 function community() {
   return (
     <Layout>
-      <main className="bg-gray-800 text-white flex flex-col items-center min-h-screen">
+      <main className="bg-zinc-800 text-white flex flex-col items-center min-h-screen">
         <Hero />
         <Liftoftheweek />
         <Mxmmsunday />

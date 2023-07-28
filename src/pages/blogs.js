@@ -9,7 +9,7 @@ function Blogs() {
 
   return (
     <Layout>
-      <main className="bg-gray-800 text-white flex flex-col items-center min-h-screen">
+      <main className="bg-zinc-800 text-white flex flex-col items-center min-h-screen">
         <Hero />
         <h1 className="text-4xl font-extrabold py-10">Latest Posts </h1>
 

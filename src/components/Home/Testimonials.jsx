@@ -32,11 +32,11 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="">
-      <h2 className="text-3xl md:text-4xl font-bold text-center pb-5">
+    <section className="py-5">
+      <h2 className="text-3xl md:text-4xl font-bold text-center">
         What people are saying ?
       </h2>
-      <div className="lg:flex lg:py-10 gap-x-10">
+      <div className="flex flex-col lg:flex-row lg:py-10 gap-x-10 gap-y-14 py-10">
         {testimonials.map((testimonial) => (
           <TestimonialCard
             name={testimonial.name}

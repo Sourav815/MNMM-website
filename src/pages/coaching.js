@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 function coaching() {
   return (
     <Layout>
-      <main className="bg-gray-800 text-white flex flex-col ">
+      <main className="bg-zinc-800 text-white flex flex-col ">
         <Hero />
         <Services />
         <ContactUs />

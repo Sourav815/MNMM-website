@@ -10,7 +10,7 @@ function Navbar() {
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="flex  items-center h-16 p-3 px-4 bg-gray-900 md:px-20 xl:px-32">
+    <div className="flex  items-center h-16 p-3 px-4 bg-zinc-900 md:px-20 xl:px-32">
       <div className="flex-1 text-white font-bold text-2xl ">MNMM</div>
       <div
         onClick={() => setOpen(!open)}
@@ -49,7 +49,7 @@ function Navbar() {
       </div>
       {/* linke items */}
       <ul
-        className={`flex flex-col md:flex-row md:items-center gap-y-10 py-20 md:py-0  absolute md:static bg-gray-900 z-50 left-0 w-full md:w-auto   transition-all duration-300 ease-in ${
+        className={`flex flex-col md:flex-row md:items-center gap-y-10 py-20 md:py-0  absolute md:static bg-zinc-900 z-50 left-0 w-full md:w-auto   transition-all duration-300 ease-in ${
           open ? "top-14" : "top-[-490px]"
         }`}
       >

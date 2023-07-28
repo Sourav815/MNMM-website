@@ -2,7 +2,7 @@ import React from "react";
 
 function TestimonialCard({ name, sport, description, imageUrl }) {
   return (
-    <div className="px-5 py-5 max-w-md">
+    <div className="p-5 max-w-md bg-zinc-900">
       <div className="flex items-center gap-4 p-5">
         <img
           alt="profile picture"

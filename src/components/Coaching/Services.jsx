@@ -26,12 +26,14 @@ function Services() {
   ];
   return (
     <div>
-      <h1 className="text-4xl  font-extrabold pt-20 pb-14 text-center">
+      <h1 className="text-4xl  font-extrabold pt-20 pb-16 text-center">
         OUR SERVICES
       </h1>
-      {services.map((services) => (
-        <Service title={services.title} description={services.description} />
-      ))}
+      <div className="space-y-14">
+        {services.map((services) => (
+          <Service title={services.title} description={services.description} />
+        ))}
+      </div>
     </div>
   );
 }
