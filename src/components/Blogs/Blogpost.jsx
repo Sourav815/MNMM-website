@@ -3,19 +3,19 @@ import { graphql } from 'gatsby'
 import Layout from '../Layout'
 import ReactMarkdown from 'react-markdown'
 import moment from 'moment'
+import {ip} from '../../utils/ip'
 
 export default function BlogPost ({ data }) {
   const post = data.allStrapiBlog
-  const apiURL = 'http://35.243.205.170'
   return (
     <Layout>
       <div className='bg-gray-800 text-white min-h-screen test'>
         {post?.nodes.map(blog => (
           <div
             className='px-5 py-10 max-w-4xl mx-auto prose dark:prose-invert sm:prose-sm lg:prose-lg xl:prose-xl prose-img:rounded-2xl'>
-            <img src={apiURL + blog.featuredImage.url} alt='blog_image' />
+            <img src={ip + blog.featuredImage.url} alt='blog_image' />
             <div className="text-xs">
-              <p className="py-0"><strong>Posted By: </strong>{blog.yourName}<br/><strong> Posted On: </strong>{blog.publishedAt}</p>
+              <p className="py-0"><strong>Posted By: </strong>{blog.yourName}<br/><strong> Posted On: </strong>{blog.publishedAt}.</p>
               
             </div>
             <ReactMarkdown>{blog.content.data.content}</ReactMarkdown>

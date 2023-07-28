@@ -15,10 +15,6 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-regular-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "dotenv": "^16.3.1",
@@ -27,10 +23,8 @@
     "gatsby-plugin-image": "^3.11.0",
     "gatsby-plugin-postcss": "^6.11.0",
     "gatsby-plugin-sharp": "^5.11.0",
-    "gatsby-source-filesystem": "^5.11.0",
     "gatsby-source-strapi": "^3.3.0",
     "gatsby-source-wordpress": "^7.11.0",
-    "gatsby-transformer-remark": "^6.11.0",
     "gatsby-transformer-sharp": "^5.11.0",
     "moment": "^2.29.4",
     "postcss": "^8.4.24",
