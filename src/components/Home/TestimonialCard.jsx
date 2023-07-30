@@ -2,22 +2,22 @@ import React from "react";
 
 function TestimonialCard({ name, sport, description, imageUrl }) {
   return (
-    <div className="p-5 max-w-md bg-zinc-900">
-      <div className="flex items-center gap-4 p-5">
+    <div className="p-5 px-10 max-w-md bg-zinc-900">
+      <div className="flex items-center gap-4 py-5">
         <img
           alt="profile picture"
           src={imageUrl}
-          className="h-20 w-20 rounded-full bg-slate-500"
+          className="h-20 w-20 rounded-full"
         />
         <div>
           <h3 className=" font-bold text-2xl lg:text-3xl">{name}</h3>
-          <h4 className="font-bold text-lg lg:text-xl text-gray-400">
+          <h4 className="font-bold text-lg lg:text-xl text-zinc-300">
             {sport}
           </h4>
         </div>
       </div>
       <div className="flex-col flex items-center">
-        <p className="text-justify px-3 py-2 lg:text-lg">{description}</p>
+        <p className="text-justify py-5 lg:text-lg">{description}</p>
 
         {/* Stars */}
         <div className="flex gap-2 py-5">
