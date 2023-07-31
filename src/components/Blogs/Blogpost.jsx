@@ -3,9 +3,12 @@ import { graphql } from "gatsby";
 import Layout from "../Layout";
 import ReactMarkdown from "react-markdown";
 import { ip } from "../../utils/ip";
+import moment from 'moment';
 
 export default function BlogPost({ data }) {
   const post = data.allStrapiBlog;
+  // const shareLink = window.location.href
+  const shareLink = `https://tailwindcss.com/docs/typography-plugin`
   return (
     <Layout>
       <div className="bg-zinc-800 text-white min-h-screen test">
@@ -13,20 +16,14 @@ export default function BlogPost({ data }) {
           <div className="px-5 py-10 max-w-5xl mx-auto prose prose-invert sm:prose-sm lg:prose-lg xl:prose-xl prose-img:rounded-2xl">
             <img src={ip + blog.featuredImage.url} alt="blog_image" />
             <div className="text-xs">
-              <p className="py-0">
-                <strong>Posted By: </strong>
-                {blog.yourName}
-                <br />
-                <strong> Posted On: </strong>
-                {new Date(blog.publishedAt).toLocaleDateString("en-GB")}.
-              </p>
+              <p className="py-0"><strong>Posted By: </strong>{blog.yourName}<br/><strong> Posted On: </strong>{moment(blog.publishedAt).format("MMMM Do YYYY, hh:mm a")}.</p>
             </div>
             <ReactMarkdown>{blog.content.data.content}</ReactMarkdown>
             <hr className="border-solid border-amber-200" />
             <div>
               <ul className="list-none flex justify-between mr-4">
                 <li className="bg-orange-400 p-2 rounded-3xl ease-in-out hover:bg-orange-50">
-                  <a href="https://facebook.com" className="no-underline">
+                  <a href={`https://www.facebook.com/sharer/sharer.php?u=${shareLink}`} className="no-underline">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="2em"
@@ -38,7 +35,7 @@ export default function BlogPost({ data }) {
                   </a>{" "}
                 </li>
                 <li className="bg-orange-400 p-2 rounded-3xl">
-                  <a href="https://twitter.com" className="no-underline">
+                  <a href={`https://twitter.com/intent/tweet?url=${shareLink}`} className="no-underline">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="2em"
@@ -49,7 +46,7 @@ export default function BlogPost({ data }) {
                   </a>
                 </li>
                 <li className="bg-orange-400 p-2 rounded-3xl">
-                  <a href="https://instagram.com">
+                  <a href="#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="2em"
