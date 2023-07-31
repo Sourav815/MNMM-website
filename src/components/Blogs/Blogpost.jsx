@@ -7,6 +7,8 @@ import moment from 'moment';
 
 export default function BlogPost({ data }) {
   const post = data.allStrapiBlog;
+  // const shareLink = window.location.href
+  const shareLink = `https://tailwindcss.com/docs/typography-plugin`
   return (
     <Layout>
       <div className="bg-zinc-800 text-white min-h-screen test">
@@ -21,7 +23,7 @@ export default function BlogPost({ data }) {
             <div>
               <ul className="list-none flex justify-between mr-4">
                 <li className="bg-orange-400 p-2 rounded-3xl ease-in-out hover:bg-orange-50">
-                  <a href="https://facebook.com" className="no-underline">
+                  <a href={`https://www.facebook.com/sharer/sharer.php?u=${shareLink}`} className="no-underline">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="2em"
@@ -33,7 +35,7 @@ export default function BlogPost({ data }) {
                   </a>{" "}
                 </li>
                 <li className="bg-orange-400 p-2 rounded-3xl">
-                  <a href="https://twitter.com" className="no-underline">
+                  <a href={`https://twitter.com/intent/tweet?url=${shareLink}`} className="no-underline">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="2em"
@@ -44,7 +46,7 @@ export default function BlogPost({ data }) {
                   </a>
                 </li>
                 <li className="bg-orange-400 p-2 rounded-3xl">
-                  <a href="https://instagram.com">
+                  <a href="#">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="2em"
