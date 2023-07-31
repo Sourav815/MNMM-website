@@ -13,7 +13,7 @@ function Blogs() {
         <Hero />
         <h1 className="text-4xl font-extrabold py-10">Latest Posts </h1>
 
-        <div>
+        <div className="flex flex-col justify-center lg:flex-row lg:flex-wrap lg:p-10 gap-10 pb-10">
           {posts.allStrapiBlog.nodes.map((post) => (
             <Blog
               key={post.id}

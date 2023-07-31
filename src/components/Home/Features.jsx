@@ -30,7 +30,7 @@ function Features() {
         Can’t wait to know more ?
       </h2>
 
-      <div className="flex flex-col lg:flex-row gap-x-10 gap-y-10 py-10">
+      <div className="flex flex-col lg:flex-row gap-x-10 gap-y-14 py-10">
         {data.map((feature, index) => (
           <Feature
             title={feature.title}
