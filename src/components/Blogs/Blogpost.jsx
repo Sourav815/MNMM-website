@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../Layout";
 import ReactMarkdown from "react-markdown";
 import { ip } from "../../utils/ip";
+import moment from 'moment';
 
 export default function BlogPost({ data }) {
   const post = data.allStrapiBlog;
