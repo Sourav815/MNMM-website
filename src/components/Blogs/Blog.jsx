@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { ip } from "../../utils/ip";
 import moment from "moment/moment";
+import readingTime from "reading-time/lib/reading-time";
 
 function Blog({ img, title, description, url, tag, date, authorName }) {
   return (
@@ -28,13 +29,15 @@ function Blog({ img, title, description, url, tag, date, authorName }) {
           >
             <circle cx="12.1" cy="12.1" r="1" />
           </svg>
-          <div className="text-sm font-semibold text-zinc-400">5 min read</div>
+          <div className="text-sm font-semibold text-zinc-400">
+            {readingTime(description).text}
+          </div>
         </div>
 
         <h2 className="text-3xl font-extrabold pt-1 pb-5 flex cursor-pointer hover:underline">
           {title}
         </h2>
-        <div className="line-clamp-6  text-zinc-300 ">{description}</div>
+        <div className="line-clamp-5  text-zinc-300 ">{description}</div>
 
         {/* <div class="px-6 pt-4 pb-7">
           {tags.map((tag) => (
