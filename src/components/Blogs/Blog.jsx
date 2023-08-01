@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 import { ip } from "../../utils/ip";
+import moment from "moment/moment";
 
-function Blog({ img, title, description, url, tags }) {
+function Blog({ img, title, description, url, tag, date, authorName }) {
   return (
     <div className="bg-zinc-900 flex flex-col max-w-lg">
       <img className="h-72 object-cover" alt="" src={`${ip}${img?.url}`} />
@@ -10,7 +11,7 @@ function Blog({ img, title, description, url, tags }) {
       <div className="p-5 pb-8">
         <div className="flex items-center mb-2">
           <span class="inline-block bg-amber-600 rounded-full px-3 py-1 text-sm font-semibold text-zinc-200 ">
-            Health
+            {tag}
           </span>
           <svg
             className="text-zinc-400"
@@ -48,9 +49,9 @@ function Blog({ img, title, description, url, tags }) {
             src="https://pereaclinic.com/wp-content/uploads/2019/12/270x270-male-avatar.png"
             alt=""
           />
-          <div className="text-sm text-zinc-300">
-            <div>John Doe</div>
-            <div>30 Jul</div>
+          <div className="text-sm text-zinc-400 font-semibold">
+            <div>{authorName}</div>
+            <div>{moment(date).format("D MMMM")}</div>
           </div>
         </div>
         <Link

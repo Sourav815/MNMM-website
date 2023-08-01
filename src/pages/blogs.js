@@ -21,7 +21,9 @@ function Blogs() {
               title={post.title}
               description={post.metadesc}
               url={post.id}
-              // tags={post.node.tags.nodes}
+              tag={post.tag}
+              date={post.createdAt}
+              authorName={post.yourName}
             />
           ))}
         </div>

@@ -8,6 +8,9 @@ export const useFetch = () => {
           id
           title
           metadesc
+          createdAt
+          yourName
+          tag
           featuredImage {
             id
             url
